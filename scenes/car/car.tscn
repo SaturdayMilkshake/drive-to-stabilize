@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://d13ilpyx65vdp"]
+
+[ext_resource type="Script" uid="uid://b6i15y6goyafd" path="res://scenes/car/car.gd" id="1_yhfra"]
+[ext_resource type="Texture2D" uid="uid://b2n58hykim37a" path="res://assets/Sprite individual size/mclaren.png" id="2_yhfra"]
+
+[node name="Car" type="CharacterBody2D"]
+scale = Vector2(0.8, 0.8)
+motion_mode = 1
+script = ExtResource("1_yhfra")
+car_sprite_path = null
+driver_name = null
+car_speed = null
+car_acceleration = null
+max_player_x_speed = null
+max_car_speed = null
+player_controlled = null
+finish_distance = null
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-64, -256, 64, -256, 104, -224, 104, 216, 80, 216, 80, 256, -64, 256, -64, 216, -96, 216, -96, -232)
+
+[node name="CarSprite" type="Sprite2D" parent="."]
+position = Vector2(6.67572e-06, 7.99998)
+scale = Vector2(0.736, 0.656)
+texture = ExtResource("2_yhfra")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

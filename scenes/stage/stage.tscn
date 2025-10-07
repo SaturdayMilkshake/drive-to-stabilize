@@ -1,0 +1,237 @@
+[gd_scene load_steps=9 format=3 uid="uid://dgelbng0yrguw"]
+
+[ext_resource type="PackedScene" uid="uid://d13ilpyx65vdp" path="res://scenes/car/car.tscn" id="1_ecxui"]
+[ext_resource type="Texture2D" uid="uid://dkyif82nel8up" path="res://assets/road_line.png" id="3_0m8sx"]
+[ext_resource type="Texture2D" uid="uid://bwrbrarrs1rg5" path="res://assets/kerbs.png" id="3_3kwj0"]
+[ext_resource type="PackedScene" uid="uid://doydl10nprv37" path="res://scenes/position_manager/position_manager.tscn" id="4_a221a"]
+[ext_resource type="Texture2D" uid="uid://cj4lvli8eg28s" path="res://assets/track_assets/6.png" id="4_pf3bu"]
+[ext_resource type="Texture2D" uid="uid://bj8qtbx72teup" path="res://assets/track_assets/18.png" id="6_d1yl1"]
+[ext_resource type="Texture2D" uid="uid://b8orafmndo3y5" path="res://assets/track_assets/5.png" id="6_pf3bu"]
+[ext_resource type="Texture2D" uid="uid://w4wpnfd5vj52" path="res://assets/track_assets/19.png" id="7_ljyi0"]
+
+[node name="Stage" type="Node2D"]
+
+[node name="PlayerCar" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(960, 800)
+car_sprite_path = "uid://bkfmg1i34b5d4"
+driver_name = "VER"
+car_speed = Vector2(0, 0)
+max_car_speed = 280
+player_controlled = true
+finish_distance = -30000
+
+[node name="Car" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(712, -488)
+car_sprite_path = "uid://cei8e1esdbca5"
+driver_name = "COL"
+finish_distance = -30000
+
+[node name="Car2" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1272, -1296)
+car_sprite_path = "uid://by82crmgsy2yv"
+driver_name = "BEA"
+finish_distance = -30000
+
+[node name="Car3" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(584, -1984)
+car_sprite_path = "uid://ddktwd0vnqxqk"
+driver_name = "BOR"
+finish_distance = -30000
+
+[node name="Car4" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1272, -2384)
+car_sprite_path = "uid://bkfmg1i34b5d4"
+driver_name = "TSU"
+finish_distance = -30000
+
+[node name="Car5" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(488, -3360)
+car_sprite_path = "uid://cei8e1esdbca5"
+driver_name = "GAS"
+finish_distance = -30000
+
+[node name="Car6" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1272, -3784)
+car_sprite_path = "uid://by82crmgsy2yv"
+driver_name = "OCO"
+finish_distance = -30000
+
+[node name="Car7" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(624, -4200)
+car_sprite_path = "uid://chttm34g1dj01"
+driver_name = "ALO"
+finish_distance = -30000
+
+[node name="Car8" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1120, -4808)
+car_sprite_path = "uid://bky7n1x8ki7yp"
+driver_name = "LAW"
+finish_distance = -30000
+
+[node name="Car9" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1312, -5512)
+car_sprite_path = "uid://cfujhr57xs0lt"
+driver_name = "SAI"
+finish_distance = -30000
+
+[node name="Car10" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(584, -6200)
+car_sprite_path = "uid://chttm34g1dj01"
+driver_name = "STR"
+finish_distance = -30000
+
+[node name="Car11" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(632, -7256)
+car_sprite_path = "uid://ddktwd0vnqxqk"
+driver_name = "HUL"
+finish_distance = -30000
+
+[node name="Car12" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1216, -7688)
+car_sprite_path = "uid://bky7n1x8ki7yp"
+driver_name = "HAD"
+finish_distance = -30000
+
+[node name="Car13" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(576, -8536)
+car_sprite_path = "uid://cfujhr57xs0lt"
+driver_name = "ALB"
+finish_distance = -30000
+
+[node name="Car14" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1152, -9304)
+car_sprite_path = "uid://bg8wct8sx24en"
+driver_name = "ANT"
+finish_distance = -30000
+
+[node name="Car15" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(416, -9816)
+car_sprite_path = "uid://w6qcb0jduoyi"
+driver_name = "HAM"
+finish_distance = -30000
+
+[node name="Car16" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(488, -10856)
+car_sprite_path = "uid://w6qcb0jduoyi"
+driver_name = "LEC"
+finish_distance = -30000
+
+[node name="Car17" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1224, -11624)
+car_sprite_path = "uid://bg8wct8sx24en"
+driver_name = "RUS"
+finish_distance = -30000
+
+[node name="Car18" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(1072, -12312)
+car_sprite_path = "uid://b2n58hykim37a"
+driver_name = "NOR"
+finish_distance = -30000
+
+[node name="Car19" parent="." instance=ExtResource("1_ecxui")]
+position = Vector2(480, -12944)
+car_sprite_path = "uid://b2n58hykim37a"
+driver_name = "PIA"
+finish_distance = -30000
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -1
+follow_viewport_scale = 2.0
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(1, 10)
+motion_mirroring = Vector2(0, 2160)
+
+[node name="TextureRect2" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 200.0
+offset_right = 320.0
+offset_bottom = 1088.0
+scale = Vector2(1, 2)
+texture = ExtResource("3_3kwj0")
+expand_mode = 4
+stretch_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 1600.0
+offset_right = 1728.0
+offset_bottom = 1088.0
+scale = Vector2(1, 2)
+texture = ExtResource("3_3kwj0")
+expand_mode = 4
+stretch_mode = 1
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = 2
+motion_scale = Vector2(1, 20)
+motion_mirroring = Vector2(0, 2560)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+offset_left = 672.0
+offset_top = -8.0
+offset_right = 736.0
+offset_bottom = 376.0
+texture = ExtResource("3_0m8sx")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="ParallaxBackground/ParallaxLayer2"]
+offset_left = 1184.0
+offset_top = -8.0
+offset_right = 1248.0
+offset_bottom = 376.0
+texture = ExtResource("3_0m8sx")
+expand_mode = 1
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = 1
+motion_scale = Vector2(1, 10)
+motion_mirroring = Vector2(0, 3840)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer3"]
+offset_left = 320.0
+offset_top = -840.0
+offset_right = 1600.0
+offset_bottom = 3000.0
+texture = ExtResource("4_pf3bu")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+z_index = -3
+motion_scale = Vector2(1, 10)
+motion_mirroring = Vector2(3840, 2160)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer5"]
+offset_right = 3840.0
+offset_bottom = 2160.0
+texture = ExtResource("6_pf3bu")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(1, 10)
+motion_mirroring = Vector2(0, 1920)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer4"]
+offset_left = -384.0
+offset_right = 616.0
+offset_bottom = 1168.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d1yl1")
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ParallaxBackground/ParallaxLayer4"]
+offset_left = 1800.0
+offset_top = 312.0
+offset_right = 2800.0
+offset_bottom = 1480.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_ljyi0")
+stretch_mode = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PositionManager" parent="CanvasLayer" instance=ExtResource("4_a221a")]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = -8

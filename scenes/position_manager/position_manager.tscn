@@ -1,0 +1,135 @@
+[gd_scene load_steps=13 format=3 uid="uid://doydl10nprv37"]
+
+[ext_resource type="Script" uid="uid://cu352yka6ov5o" path="res://scenes/position_manager/position_manager.gd" id="1_mak4p"]
+[ext_resource type="PackedScene" uid="uid://d323il54j7p2v" path="res://scenes/position_manager/position_item.tscn" id="1_y844e"]
+[ext_resource type="Texture2D" uid="uid://bkf35pmw8wc0w" path="res://assets/logos/2025mclarenlogowhite.png" id="3_txfjq"]
+[ext_resource type="Texture2D" uid="uid://7ngme7mgrnqd" path="res://assets/logos/2025mercedeslogowhite.png" id="4_h3m0o"]
+[ext_resource type="Texture2D" uid="uid://csq7t6nfn0wl5" path="res://assets/logos/2025ferrarilogolight.png" id="5_b6v6j"]
+[ext_resource type="Texture2D" uid="uid://l6fr1bg215vi" path="res://assets/logos/2025alpinelogowhite.png" id="6_b6v6j"]
+[ext_resource type="Texture2D" uid="uid://cbsclcn4hkkh2" path="res://assets/logos/2025williamslogowhite.png" id="6_xmnp1"]
+[ext_resource type="Texture2D" uid="uid://duddsya1yl8ji" path="res://assets/logos/2025racingbullslogowhite.png" id="7_q8jv3"]
+[ext_resource type="Texture2D" uid="uid://b7gl8us16fupv" path="res://assets/logos/2025redbullracinglogowhite.png" id="7_xmnp1"]
+[ext_resource type="Texture2D" uid="uid://bh21o1ulhi58w" path="res://assets/logos/2025kicksauberlogowhite.png" id="8_t3qs8"]
+[ext_resource type="Texture2D" uid="uid://bcxtupeh6kfa" path="res://assets/logos/2025astonmartinlogowhite.png" id="9_b2k1o"]
+[ext_resource type="Texture2D" uid="uid://c0mfqu8saahy7" path="res://assets/logos/2025haaslogowhite.png" id="10_rklw7"]
+
+[node name="PositionManager" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 320.0
+offset_bottom = 608.0
+script = ExtResource("1_mak4p")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="PositionContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="PositionItem" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("3_txfjq")
+item_name = "PIA"
+
+[node name="PositionItem2" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("3_txfjq")
+item_name = "NOR"
+
+[node name="PositionItem3" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("4_h3m0o")
+item_name = "RUS"
+
+[node name="PositionItem4" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("5_b6v6j")
+item_name = "LEC"
+
+[node name="PositionItem5" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("5_b6v6j")
+item_name = "HAM"
+
+[node name="PositionItem6" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("4_h3m0o")
+item_name = "ANT"
+
+[node name="PositionItem7" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("6_xmnp1")
+item_name = "ALB"
+
+[node name="PositionItem8" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("7_q8jv3")
+item_name = "HAD"
+
+[node name="PositionItem9" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("8_t3qs8")
+item_name = "HUL"
+
+[node name="PositionItem10" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("9_b2k1o")
+item_name = "STR"
+
+[node name="PositionItem11" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("6_xmnp1")
+item_name = "SAI"
+
+[node name="PositionItem12" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("7_q8jv3")
+item_name = "LAW"
+
+[node name="PositionItem13" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("9_b2k1o")
+item_name = "ALO"
+
+[node name="PositionItem14" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("10_rklw7")
+item_name = "OCO"
+
+[node name="PositionItem15" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("6_b6v6j")
+item_name = "GAS"
+
+[node name="PositionItem16" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("7_xmnp1")
+item_name = "TSU"
+
+[node name="PositionItem17" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("8_t3qs8")
+item_name = "BOR"
+
+[node name="PositionItem18" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("10_rklw7")
+item_name = "BEA"
+
+[node name="PositionItem19" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+icon_texture = ExtResource("6_b6v6j")
+item_name = "COL"
+
+[node name="PositionItem20" parent="PositionContainer" instance=ExtResource("1_y844e")]
+layout_mode = 2
+player_item = true
+icon_texture = ExtResource("7_xmnp1")
+item_name = "VER"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
